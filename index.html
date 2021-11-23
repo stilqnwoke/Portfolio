@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="https://cdn-icons-png.flaticon.com/512/48/48540.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio | Stilyan Georgiev</title>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/48/48540.png"
+          alt="Bankist logo"
+          class="nav__logo"
+          id="logo"
+          data-version-number="3.0"
+        />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">GitHub links</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Certificates</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Send an email</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <h1>
+          My name is
+          <!-- Green highlight effect -->
+          <span class="highlight">Stilyan</span>
+          and this is my<br />
+          <span class="highlight">portfolio</span>
+        </h1>
+        <!-- <h4>A simpler banking experience for a simpler life.</h4> -->
+        <button class="btn--text btn--scroll-to">
+          More about my experience &DownArrow;
+        </button>
+        <img src="img/DIPLOMA.jpg" class="header__img" alt="SoftUni diploma" />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Projects</h2>
+        <!-- <h3 class="section__header">Here are the projects I have worked on</h3> -->
+      </div>
+
+      <div class="features">
+        <img
+          src="img/ReactJSProjectMain.png"
+          data-src="img/ReactJSProjectMain.png"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-shopping-bag"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">E-Commerce website</h5>
+          <p>
+            The website has the functions to choose and add products to the
+            cart, remove products once in cart, proceeding to Checkout with
+            implemented payment system and Order history while logged in.
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-package"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Forkify-Recipe website</h5>
+          <p>
+            Functions include, searching up recipes via the search bar,
+            ingredients shown once a recipe is clicked, bookmark feature and
+            including being able to check bookmarked recipes and creating
+            recipes.
+          </p>
+        </div>
+        <img
+          src="img/ForkifyProjectRecipes.png"
+          data-src="img/ForkifyProjectRecipes.png"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/blog.png"
+          data-src="img/blog.png"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-smartphone"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Blog-like website</h5>
+          <p>
+            You are able to view the posts created and the time they were
+            created. If you are admin you can create a post, if not you are only
+            able to view it. You can also edit the roles.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">GitHub Links</h2>
+        <!-- <h3 class="section__header">
+          Everything as simple as possible, but no simpler.
+        </h3> -->
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>1.</span>E-Commerce
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>2.</span>Forkify-Recipe website
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>3.</span>Blog-like
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            I have used the following technologies, frameworks and development
+            techniques:
+          </h5>
+          <p>
+            Context API (REACT) / Firebase (user authentication + database) /
+            React JS / React Router / Material UI for Icons / React Hooks /
+            Client-side routing / Payment implementation using Stripe -
+            <a href="https://github.com/stilqnwoke/e-commerce.git"
+              >GitHub repository</a
+            >
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Website created with the help of a Udemy course
+          </h5>
+          <p>
+            The language used is JavaScript and the technologies are - MVC, DOM
+            implementation, localStorage for storing data in the browser,
+            Netlify for the upload and fetching an API.
+            <a href="https://github.com/stilqnwoke/forkify-recipe-app.git"
+              >GitHub repository</a
+            >
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Technologies used to create the project (not finished)
+          </h5>
+          <p>
+            The website was created using JAVA/HTML/CSS. It is a Java Spring
+            project with a database created with MySQL. It has ADMIN and USER
+            roles with different functionalities allowed for them. Link -
+            <a href="https://github.com/stilqnwoke/MyBlog.git"
+              >GitHub repository</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h3 class="section__header">
+          The certificates I have attained while studying at SoftUni
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <img src="img/JavaFundamentals.jpg" alt="Photo 1" />
+        </div>
+        <div class="slide">
+          <img src="img/JavaAdvanced.jpg" alt="Photo 2" />
+        </div>
+        <div class="slide"><img src="img/JavaOOP.jpg" alt="Photo 3" /></div>
+        <div class="slide">
+          <img src="img/JSApplications.jpg" alt="Photo 4" />
+        </div>
+        <div class="slide"><img src="img/ReactJS.jpg" alt="Photo 5" /></div>
+        <div class="slide"><img src="img/MySQl.jpg" alt="Photo 6" /></div>
+        <div class="slide">
+          <img src="img/SpringFundamentals.jpg" alt="Photo 7" />
+        </div>
+        <div class="slide"><img src="img/SpringData.jpg" alt="Photo 8" /></div>
+        <div class="slide">
+          <img src="img/SpringAdvanced.jpg" alt="Photo 9" />
+        </div>
+        <button class="slider__btn slider__btn--left">&lt;</button>
+        <button class="slider__btn slider__btn--right">&gt;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/48/48540.png"
+        alt="Logo"
+        class="footer__logo"
+      />
+      <h2 class="footer__title">Stilyan Georgiev</h2>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        Send an <span class="highlight"> email</span>
+      </h2>
+      <form
+        action="https://formsubmit.co/debelakoto@gmail.com"
+        method="POST"
+        class="modal__form"
+      >
+        <label>Names</label>
+        <input type="text" name="name" required />
+        <label>Email Address</label>
+        <input type="email" name="email" required />
+        <label>Message</label>
+        <input type="text" name="text" required />
+        <button class="btn" type="submit">Send</button>
+        <input type="hidden" name="_captcha" value="false" />
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
